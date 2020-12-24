@@ -21,5 +21,5 @@ def update_data():
 
 
 scheduler = BlockingScheduler(timezone="Asia/Shanghai")
-scheduler.add_job(update_data, 'cron', minute="57")
+scheduler.add_job(update_data, 'cron', minute="15")
 scheduler.start()
