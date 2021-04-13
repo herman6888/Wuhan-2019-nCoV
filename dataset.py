@@ -14,7 +14,7 @@ toutiao_data = json.loads(toutiao_forum["forum"]["extra"]["ncov_string_list"])
 
 data_list = []
 data_date = datetime.fromtimestamp(toutiao_data["updateTime"]).strftime('%Y-%m-%d')
-#data_date = "2021-02-07"
+#data_date = "2021-04-13"
 for province in toutiao_data["provinces"]:
     data_list.append({
         "date": data_date,
